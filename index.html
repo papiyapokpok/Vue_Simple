@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue-Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+
+<body>
+    <div>
+        <button ><a href="component/test.html">Goto About...</a></button>
+    </div>
+    <div id="vue-app">
+        <div class="container">
+            <h2>Vue</h2>
+            <!-- <form> -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="name" class="form-control" 
+                        id="name" placeholder="Enter name" name="name"
+                        v-model="inputData.name">
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salary:</label>
+                    <input type="number" class="form-control" 
+                        id="salary" placeholder="Enter salary" name="salary"
+                        v-model="inputData.salary">
+                </div>
+                <button type="submit" class="btn btn-default" @click="addData">Submit</button>
+            <!-- </form> -->
+            <hr>
+            <h2>Display</h2>
+            <ul>
+                <li v-for="view in viewData">
+                    Name: {{view.vName}} <br>
+                    Salary: {{view.vSalary}}
+                </li>
+            </ul>
+            <h2>Summary</h2>
+            <ul>
+                <li>Total: {{sumData}}</li>
+                <li>Average: {{avgData}}</li>
+            </ul>
+
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

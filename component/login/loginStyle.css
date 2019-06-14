@@ -1,0 +1,77 @@
+.logo {
+    margin-left: 8px;
+    height: 40px;
+    float: left;
+}
+
+.main-div {
+    text-align: -webkit-center;
+}
+
+.container-div {
+    width: 400px;
+    position: inherit;
+    margin-top: 4%;
+}
+
+.signIn {
+    text-align: left;
+    margin-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+input[type=email] ,[type=password]{
+    width: 92%;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #b3b3b3;
+    font-size: 16px;
+}
+
+input[type=checkbox] {
+    margin-left: 8px
+}
+
+button {
+    width: 80px;
+    height: 34px;
+    border-radius: 40px;
+    font-size: 18px;
+    background-color: #1786e8;
+    color: white;
+    float: left;
+    margin: 8px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.left-div {
+    margin-top: 8px;
+    text-align: left;
+    float: left;
+    width: 50%;
+}
+
+.right-div {
+    margin-top: 8px;
+    float: right;
+    width: 50%;
+}
+
+.forgot {
+    float: right;
+    margin-top: 2px;
+    margin-right: 8px;
+    color: #1e6dec;
+}

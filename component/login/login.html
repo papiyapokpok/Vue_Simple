@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <link rel="stylesheet" href="loginStyle.css">
+    <title>Test</title>
+</head>
+<body>
+    <div id="app-login" class="main-div">
+        <div class="container-div">
+            <div>
+                <img src="../../assets/adobe-logo.png" class="logo"><br>
+            </div><br>
+            <div>
+                <p class="signIn">Sign in</p>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Input Email" 
+                    v-model="inputData.email">
+                <input type="password" id="pass" placeholder="Input Password" 
+                    v-model="inputData.password">
+            </div>
+            <div class="left-div">
+                <input type="checkbox">Stay sign in</input>
+            </div>
+            <div class="right-div">
+                <p class="forgot">Forgot password</p>
+            </div>
+            <button v-on:click="getInputData">
+                Sigin
+            </button>
+        </div>
+        <br><br><br><br><br><br>
+
+        <div v-if="alert" class="alert-div">
+            <div>
+                
+            </div>
+            <h1 v-for="res in loginData">
+            Welcome {{res.email}}
+            </h1>
+        </div>
+
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
