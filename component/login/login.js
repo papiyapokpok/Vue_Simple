@@ -29,5 +29,4 @@ var app = new Vue({
     watch: {
         
     },
-    
 })
